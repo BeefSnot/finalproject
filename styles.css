@@ -3,13 +3,15 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #1e90ff, #87cefa); /* Blue gradient */
+    background: linear-gradient(to bottom, #1e90ff, #87cefa);
+    /* Blue gradient */
     color: #333333;
 }
 
 /* Header Styling */
 header {
-    background-color: #1e90ff; /* Blue for a fresh look */
+    background-color: #1e90ff;
+    /* Blue for a fresh look */
     padding: 20px;
     text-align: center;
     color: #ffffff;
@@ -20,8 +22,10 @@ header h1 {
     margin: 0;
     font-size: 3em;
     font-weight: bold;
-    text-shadow: 2px 2px #4682b4; /* Subtle shadow for depth */
-    animation: slide-down 1s ease-out; /* Slide-down animation */
+    text-shadow: 2px 2px #4682b4;
+    /* Subtle shadow for depth */
+    animation: slide-down 1s ease-out;
+    /* Slide-down animation */
 }
 
 /* Navigation Styling */
@@ -31,7 +35,8 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 15px;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
 }
 
 nav ul li a {
@@ -40,20 +45,24 @@ nav ul li a {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 20px;
-    background-color: #4682b4; /* Blue buttons */
+    background-color: #4682b4;
+    /* Blue buttons */
     transition: transform 0.3s, background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #1e90ff; /* Lighter blue on hover */
-    transform: scale(1.1); /* Slight zoom effect */
+    background-color: #1e90ff;
+    /* Lighter blue on hover */
+    transform: scale(1.1);
+    /* Slight zoom effect */
 }
 
 /* Home Section */
 #home {
     text-align: center;
     padding: 40px;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    background: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent white */
     border-radius: 20px;
     margin: 20px auto;
     max-width: 800px;
@@ -62,9 +71,11 @@ nav ul li a:hover {
 
 #home h2 {
     font-size: 2.5em;
-    color: #1e90ff; /* Blue for headings */
+    color: #1e90ff;
+    /* Blue for headings */
     margin-bottom: 10px;
-    animation: fade-in 2s ease-in; /* Fade-in animation */
+    animation: fade-in 2s ease-in;
+    /* Fade-in animation */
 }
 
 #home p {
@@ -80,7 +91,58 @@ nav ul li a:hover {
 }
 
 #home p.bounce {
-    animation: bounce 2s infinite; /* Bounce animation */
+    animation: bounce 2s infinite;
+    /* Bounce animation */
+}
+
+/* Weather Section Styling */
+#weather {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#weather h2 {
+    font-size: 2em;
+    color: #1e90ff; /* Blue for headings */
+    margin-bottom: 10px;
+}
+
+#weather p {
+    font-size: 1.2em;
+    color: #333333;
+}
+
+/* Daily Quote Section Styling */
+#daily-quote {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#daily-quote h2 {
+    font-size: 2em;
+    color: #1e90ff; /* Blue for headings */
+    margin-bottom: 10px;
+}
+
+#daily-quote blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #333333;
+    margin: 0;
+    padding: 10px;
+    border-left: 4px solid #1e90ff; /* Blue border for quotes */
+    background: rgba(240, 248, 255, 0.5); /* Light blue background */
+    border-radius: 5px;
 }
 
 /* Footer Styling */
@@ -94,7 +156,7 @@ footer {
 }
 
 /* Custom Alert Styling */
-.custom-alert {
+custom-alert {
     position: fixed;
     top: 0;
     left: 0;
@@ -150,6 +212,7 @@ footer {
         transform: translateY(-50px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -160,18 +223,26 @@ footer {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(-10px);
     }
+
     60% {
         transform: translateY(-5px);
     }
@@ -182,11 +253,13 @@ footer {
 /* Tablet Screens (768px and below) */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2.5em; /* Smaller header text */
+        font-size: 2.5em;
+        /* Smaller header text */
     }
 
     nav ul {
-        flex-direction: column; /* Stack navigation links vertically */
+        flex-direction: column;
+        /* Stack navigation links vertically */
         gap: 10px;
     }
 
@@ -196,28 +269,34 @@ footer {
     }
 
     #home h2 {
-        font-size: 2em; /* Adjust heading size */
+        font-size: 2em;
+        /* Adjust heading size */
     }
 
     #home p {
-        font-size: 1em; /* Adjust paragraph size */
+        font-size: 1em;
+        /* Adjust paragraph size */
     }
 }
 
 /* Mobile Screens (480px and below) */
 @media (max-width: 480px) {
     header h1 {
-        font-size: 2em; /* Smaller header text */
+        font-size: 2em;
+        /* Smaller header text */
     }
 
     nav ul {
-        flex-direction: column; /* Stack navigation links vertically */
+        flex-direction: column;
+        /* Stack navigation links vertically */
         gap: 8px;
     }
 
     nav ul li a {
-        padding: 8px 15px; /* Smaller padding for buttons */
-        font-size: 0.9em; /* Smaller font size */
+        padding: 8px 15px;
+        /* Smaller padding for buttons */
+        font-size: 0.9em;
+        /* Smaller font size */
     }
 
     #home {
@@ -226,14 +305,17 @@ footer {
     }
 
     #home h2 {
-        font-size: 1.8em; /* Adjust heading size */
+        font-size: 1.8em;
+        /* Adjust heading size */
     }
 
     #home p {
-        font-size: 0.9em; /* Adjust paragraph size */
+        font-size: 0.9em;
+        /* Adjust paragraph size */
     }
 
     footer {
-        font-size: 0.9em; /* Smaller footer text */
+        font-size: 0.9em;
+        /* Smaller footer text */
     }
 }

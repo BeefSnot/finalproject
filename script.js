@@ -90,12 +90,12 @@ $(document).ready(function () {
     // Fetch weather data using OpenWeatherMap API
     const apiKey = '7f17c76e3536c4e2e69e150ce32f69b5'; // Replace with your API key
     const city = 'Tulsa'; // Replace with your desired city
-    const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`; // Changed to imperial for Fahrenheit
 
     $.get(weatherUrl, function (data) {
         const weather = data.weather[0].description;
         const temp = data.main.temp;
-        $('#weather-info').html(`It's currently ${temp}°C with ${weather} in ${city}.`);
+        $('#weather-info').html(`It's currently ${temp}°F with ${weather} in ${city}.`);
     }).fail(function () {
         $('#weather-info').html('Unable to fetch weather data. Please try again later.');
     });

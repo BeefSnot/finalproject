@@ -16,7 +16,7 @@ $(document).ready(function () {
     // Form submission alert
     $('#contact-form').on('submit', function (event) {
         event.preventDefault();
-        alert('Thank you for contacting SPRK Radio! We will get back to you soon.');
+        showCustomAlert('Thank you for contacting SPRK Radio! We will get back to you soon.');
         $(this).trigger('reset');
     });
 });
@@ -24,5 +24,24 @@ $(document).ready(function () {
 // Disable right-click on the entire page
 document.addEventListener('contextmenu', function (event) {
     event.preventDefault();
-    alert('Right-click is disabled on this website. 🎵');
+    showCustomAlert('Right-click is disabled on this website. 🎵');
 });
+
+// Custom alert function
+function showCustomAlert(message) {
+    const alertBox = document.createElement('div');
+    alertBox.className = 'custom-alert';
+    alertBox.innerHTML = `
+        <div class="custom-alert-content">
+            <h3>SPRK Radio says:</h3>
+            <p>${message}</p>
+            <button id="close-alert">OK</button>
+        </div>
+    `;
+    document.body.appendChild(alertBox);
+
+    // Close the alert when the button is clicked
+    document.getElementById('close-alert').addEventListener('click', function () {
+        document.body.removeChild(alertBox);
+    });
+}

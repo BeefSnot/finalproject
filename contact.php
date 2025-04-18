@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mail($to, $subject, $body, $headers)) {
         echo "success";
     } else {
-        echo "error: Unable to send email. Please try again later.";
+        echo "error";
     }
 }
 ?>

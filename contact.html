@@ -7,11 +7,31 @@
     <meta name="description"
         content="Get in touch with SPRK Radio! Fill out our contact form to send us your questions, feedback, or inquiries. We'd love to hear from you.">
     <title>SPRK Radio - Contact</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gradient-to-b from-blue-500 to-blue-300 text-gray-800">
-    <header class="bg-blue-600 text-white text-center py-6 shadow-lg">
+<body class="bg-gradient-to-b from-blue-500 to-blue-300 text-gray-800 relative overflow-hidden">
+    <!-- Floating yellow orbs -->
+    <div class="spark" style="top: 10%; left: 15%; animation-delay: 0s;"></div>
+    <div class="spark" style="top: 30%; left: 40%; animation-delay: 1s;"></div>
+    <div class="spark" style="top: 50%; left: 70%; animation-delay: 2s;"></div>
+    <div class="spark" style="top: 70%; left: 20%; animation-delay: 3s;"></div>
+    <div class="spark" style="top: 90%; left: 60%; animation-delay: 4s;"></div>
+
+    <!-- Floating bubbles -->
+    <div class="bubble" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+    <div class="bubble" style="top: 40%; left: 30%; animation-delay: 1s;"></div>
+    <div class="bubble" style="top: 60%; left: 50%; animation-delay: 2s;"></div>
+    <div class="bubble" style="top: 80%; left: 70%; animation-delay: 3s;"></div>
+
+    <!-- Floating music notes -->
+    <div class="music-note" style="top: 30%; left: 15%; animation-delay: 0s;">🎵</div>
+    <div class="music-note" style="top: 50%; left: 40%; animation-delay: 1s;">🎶</div>
+    <div class="music-note" style="top: 70%; left: 60%; animation-delay: 2s;">🎵</div>
+    <div class="music-note" style="top: 90%; left: 80%; animation-delay: 3s;">🎶</div>
+
+    <header class="bg-blue-600 text-white text-center py-6 shadow-lg bump">
         <h1 class="text-4xl font-bold tracking-wide">🎵 SPRK Radio 🎵</h1>
         <nav class="mt-4">
             <ul class="flex justify-center space-x-4">
@@ -19,7 +39,7 @@
                 <li><a href="schedule.html" class="text-white font-semibold hover:text-yellow-300">Schedule</a></li>
                 <li><a href="about.html" class="text-white font-semibold hover:text-yellow-300">About</a></li>
                 <li><a href="listen-live.html" class="text-white font-semibold hover:text-yellow-300">Listen Live</a></li>
-                <li><a href="contact.html" class="text-white font-semibold hover:text-yellow-300">Contact</a></li>
+                <li><a href="contact.html" class="text-yellow-300 font-semibold">Contact</a></li>
                 <li><a href="readme.html" class="text-white font-semibold hover:text-yellow-300">Read Me</a></li>
             </ul>
         </nav>
@@ -29,22 +49,25 @@
         <section id="contact" class="bg-white p-6 rounded-lg shadow-lg text-center">
             <h2 class="text-3xl font-bold text-blue-600 mb-4">Contact Us</h2>
             <p class="text-lg text-gray-700">We’d love to hear from you! Fill out the form below to get in touch with us.</p>
-            <form id="contact-form" action="contact.php" method="POST" class="space-y-4">
+            <form id="contact-form" class="space-y-4">
                 <div>
                     <label for="name" class="block text-left font-semibold text-gray-700">Name:</label>
-                    <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" placeholder="Your Name" required>
+                    <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded"
+                        placeholder="Your Name" required>
                 </div>
                 <div>
                     <label for="email" class="block text-left font-semibold text-gray-700">Email:</label>
-                    <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded" placeholder="Your Email" required>
+                    <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded"
+                        placeholder="Your Email" required>
                 </div>
                 <div>
                     <label for="message" class="block text-left font-semibold text-gray-700">Message:</label>
-                    <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded" rows="5" placeholder="Your Message" required></textarea>
+                    <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded" rows="5"
+                        placeholder="Your Message" required></textarea>
                 </div>
-                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send Message</button>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send
+                    Message</button>
             </form>
-            <div id="form-response" class="mt-3 text-green-600"></div>
         </section>
     </main>
 

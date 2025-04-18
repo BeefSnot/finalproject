@@ -5,18 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Check out the SPRK Radio schedule to see when your favorite shows and live events are airing. Stay tuned for the best music and entertainment!">
+        content="Check out the schedule for SPRK Radio to stay updated on upcoming shows and events.">
     <title>SPRK Radio - Schedule</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gradient-to-b from-blue-500 to-blue-300 text-gray-800">
-    <header class="bg-blue-600 text-white text-center py-6 shadow-lg">
+<body class="bg-gradient-to-b from-blue-500 to-blue-300 text-gray-800 relative overflow-x-hidden">
+    <!-- Floating yellow orbs -->
+    <div class="spark" style="top: 10%; left: 15%; animation-delay: 0s;"></div>
+    <div class="spark" style="top: 30%; left: 40%; animation-delay: 1s;"></div>
+    <div class="spark" style="top: 50%; left: 70%; animation-delay: 2s;"></div>
+    <div class="spark" style="top: 70%; left: 20%; animation-delay: 3s;"></div>
+    <div class="spark" style="top: 90%; left: 60%; animation-delay: 4s;"></div>
+
+    <!-- Floating bubbles -->
+    <div class="bubble" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+    <div class="bubble" style="top: 40%; left: 30%; animation-delay: 1s;"></div>
+    <div class="bubble" style="top: 60%; left: 50%; animation-delay: 2s;"></div>
+    <div class="bubble" style="top: 80%; left: 70%; animation-delay: 3s;"></div>
+
+    <!-- Floating music notes -->
+    <div class="music-note" style="top: 30%; left: 15%; animation-delay: 0s;">🎵</div>
+    <div class="music-note" style="top: 50%; left: 40%; animation-delay: 1s;">🎶</div>
+    <div class="music-note" style="top: 70%; left: 60%; animation-delay: 2s;">🎵</div>
+    <div class="music-note" style="top: 90%; left: 80%; animation-delay: 3s;">🎶</div>
+
+    <header class="bg-blue-600 text-white text-center py-6 shadow-lg bump">
         <h1 class="text-4xl font-bold tracking-wide">🎵 SPRK Radio 🎵</h1>
         <nav class="mt-4">
             <ul class="flex justify-center space-x-4">
                 <li><a href="index.html" class="text-white font-semibold hover:text-yellow-300">Home</a></li>
-                <li><a href="schedule.html" class="text-white font-semibold hover:text-yellow-300">Schedule</a></li>
+                <li><a href="schedule.html" class="text-yellow-300 font-semibold">Schedule</a></li>
                 <li><a href="about.html" class="text-white font-semibold hover:text-yellow-300">About</a></li>
                 <li><a href="listen-live.html" class="text-white font-semibold hover:text-yellow-300">Listen Live</a></li>
                 <li><a href="contact.html" class="text-white font-semibold hover:text-yellow-300">Contact</a></li>
@@ -26,9 +46,16 @@
     </header>
 
     <main class="container mx-auto my-10 px-4">
-        <section id="schedule" class="bg-white p-6 rounded-lg shadow-lg text-center">
-            <h2 class="text-3xl font-bold text-blue-600 mb-4">Schedule</h2>
-            <p class="text-lg text-gray-700">Check out our daily schedule of shows and live events.</p>
+        <section id="schedule" class="bg-gradient-to-r from-white via-gray-100 to-white p-6 rounded-lg shadow-lg text-center">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">SPRK Radio Schedule</h2>
+            <p class="text-lg text-gray-700">
+                Stay updated with our latest shows and events. Here’s what’s coming up:
+            </p>
+            <ul class="list-disc text-left mt-4 ml-8 text-gray-700">
+                <li>🎤 <strong>Morning Show:</strong> 8:00 AM - 10:00 AM</li>
+                <li>🎶 <strong>Afternoon Beats:</strong> 12:00 PM - 2:00 PM</li>
+                <li>🌙 <strong>Evening Chill:</strong> 6:00 PM - 8:00 PM</li>
+            </ul>
         </section>
         <div class="mt-8">
             <iframe src="https://radio.lumihost.net/public/lumi_radio/schedule/embed?theme=light" frameborder="0"

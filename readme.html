@@ -4,14 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SPRK Radio Website README">
-    <title>SPRK Radio - README</title>
+    <meta name="description"
+        content="Learn how to use SPRK Radio and explore the features of your favorite internet radio station.">
+    <title>SPRK Radio - Read Me</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gradient-to-b from-blue-500 to-blue-300 text-gray-800">
-    <header class="bg-blue-600 text-white text-center py-6 shadow-lg">
-        <h1 class="text-4xl font-bold tracking-wide">🎵 SPRK Radio Website 🎵</h1>
+<body class="bg-gradient-to-b from-blue-500 to-blue-300 text-gray-800 relative overflow-hidden">
+    <!-- Floating yellow orbs -->
+    <div class="spark" style="top: 10%; left: 15%; animation-delay: 0s;"></div>
+    <div class="spark" style="top: 30%; left: 40%; animation-delay: 1s;"></div>
+    <div class="spark" style="top: 50%; left: 70%; animation-delay: 2s;"></div>
+    <div class="spark" style="top: 70%; left: 20%; animation-delay: 3s;"></div>
+    <div class="spark" style="top: 90%; left: 60%; animation-delay: 4s;"></div>
+
+    <!-- Floating bubbles -->
+    <div class="bubble" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+    <div class="bubble" style="top: 40%; left: 30%; animation-delay: 1s;"></div>
+    <div class="bubble" style="top: 60%; left: 50%; animation-delay: 2s;"></div>
+    <div class="bubble" style="top: 80%; left: 70%; animation-delay: 3s;"></div>
+
+    <!-- Floating music notes -->
+    <div class="music-note" style="top: 30%; left: 15%; animation-delay: 0s;">🎵</div>
+    <div class="music-note" style="top: 50%; left: 40%; animation-delay: 1s;">🎶</div>
+    <div class="music-note" style="top: 70%; left: 60%; animation-delay: 2s;">🎵</div>
+    <div class="music-note" style="top: 90%; left: 80%; animation-delay: 3s;">🎶</div>
+
+    <header class="bg-blue-600 text-white text-center py-6 shadow-lg bump">
+        <h1 class="text-4xl font-bold tracking-wide">🎵 SPRK Radio 🎵</h1>
         <nav class="mt-4">
             <ul class="flex justify-center space-x-4">
                 <li><a href="index.html" class="text-white font-semibold hover:text-yellow-300">Home</a></li>
@@ -25,104 +46,16 @@
     </header>
 
     <main class="container mx-auto my-10 px-4">
-        <section class="mb-8">
-            <h2 class="text-3xl font-bold text-blue-600 mb-4">Welcome</h2>
+        <section id="readme" class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">How to Use SPRK Radio</h2>
             <p class="text-lg text-gray-700">
-                Welcome to the <strong>SPRK Radio</strong> website project! This is a fun and colorful internet radio
-                station website where users can listen to live music, check schedules, and learn more about the station.
-                It's designed to be fresh, bubbly, and super easy to use! 🌈✨
+                Welcome to SPRK Radio! Here’s how you can make the most of your experience:
             </p>
-        </section>
-
-        <hr class="border-gray-300 my-6">
-
-        <section class="mb-8">
-            <h2 class="text-3xl font-bold text-blue-600 mb-4">🌟 Features</h2>
-            <ul class="list-disc pl-6 text-lg text-gray-700">
-                <li class="mb-2"><strong>Listen Live</strong>: Click the "Listen Live" button to start streaming your
-                    favorite tunes. 🎶</li>
-                <li class="mb-2"><strong>Schedule</strong>: Check out the daily schedule of shows and live events.</li>
-                <li class="mb-2"><strong>About Us</strong>: Learn more about SPRK Radio and what makes it awesome.</li>
-                <li class="mb-2"><strong>Contact Form</strong>: Got questions or feedback? Fill out the form to get in
-                    touch with us. ❤️</li>
-                <li class="mb-2"><strong>Smooth Scrolling</strong>: Navigate the site with smooth and seamless
-                    scrolling.</li>
-                <li class="mb-2"><strong>Right-Click Disabled</strong>: Right-clicking is blocked to keep the site secure
-                    and focused. 🎵</li>
-                <li class="mb-2"><strong>Custom Alerts</strong>: Fun pop-ups that say "SPRK Radio says..." instead of
-                    boring browser alerts.</li>
+            <ul class="list-disc text-left mt-4 ml-8 text-gray-700">
+                <li>🎧 <strong>Listen Live:</strong> Tune in to live shows and enjoy your favorite music.</li>
+                <li>📅 <strong>Check the Schedule:</strong> Stay updated on upcoming shows and events.</li>
+                <li>📬 <strong>Contact Us:</strong> Send us your feedback, questions, or song requests.</li>
             </ul>
-        </section>
-
-        <hr class="border-gray-300 my-6">
-
-        <section class="mb-8">
-            <h2 class="text-3xl font-bold text-blue-600 mb-4">🛠️ How It Works</h2>
-            <p class="text-lg text-gray-700">
-                This website is designed to run exclusively on <strong>your hosting environment</strong>. It’s not meant
-                to be hosted elsewhere. Here’s how it works:
-            </p>
-            <ol class="list-decimal pl-6 text-lg text-gray-700 mt-4">
-                <li class="mb-2"><strong>Homepage</strong>: The homepage welcomes users with a fun message and a link to
-                    start listening live.</li>
-                <li class="mb-2"><strong>Navigation</strong>: Use the menu at the top to explore the site (Home,
-                    Schedule, About, Listen Live, Contact).</li>
-                <li class="mb-2"><strong>Interactive Features</strong>: Includes smooth scrolling, custom alerts, and a
-                    contact form for user interaction.</li>
-            </ol>
-        </section>
-
-        <hr class="border-gray-300 my-6">
-
-        <section class="mb-8">
-            <h2 class="text-3xl font-bold text-blue-600 mb-4">🌐 Main SPRK Radio Website</h2>
-            <p class="text-lg text-gray-700">
-                The SPRK Radio website is a vibrant and engaging platform for your internet radio station. It’s designed
-                to:
-            </p>
-            <ul class="list-disc pl-6 text-lg text-gray-700 mt-4">
-                <li class="mb-2">Showcase your station’s personality with playful emojis and animations.</li>
-                <li class="mb-2">Provide easy access to live streaming, schedules, and contact options.</li>
-                <li class="mb-2">Deliver a seamless and fun user experience.</li>
-            </ul>
-        </section>
-
-        <hr class="border-gray-300 my-6">
-
-        <section class="mb-8">
-            <h2 class="text-3xl font-bold text-blue-600 mb-4">📂 File Structure</h2>
-            <p class="text-lg text-gray-700">Here’s a quick overview of the project files:</p>
-            <ul class="list-disc pl-6 text-lg text-gray-700 mt-4">
-                <li class="mb-2"><strong>index.html</strong>: The homepage of the website.</li>
-                <li class="mb-2"><strong>schedule.html</strong>: The schedule page for shows and events.</li>
-                <li class="mb-2"><strong>about.html</strong>: The about page with information about SPRK Radio.</li>
-                <li class="mb-2"><strong>listen-live.html</strong>: The page where users can stream live music.</li>
-                <li class="mb-2"><strong>contact.html</strong>: The contact page with a form to reach out.</li>
-                <li class="mb-2"><strong>style.css</strong>: The main stylesheet for the website.</li>
-                <li class="mb-2"><strong>script.js</strong>: The JavaScript file for smooth scrolling, custom alerts,
-                    and right-click blocking.</li>
-            </ul>
-        </section>
-
-        <hr class="border-gray-300 my-6">
-
-        <section class="mb-8">
-            <h2 class="text-3xl font-bold text-blue-600 mb-4">🎨 Design</h2>
-            <ul class="list-disc pl-6 text-lg text-gray-700">
-                <li class="mb-2"><strong>Colors</strong>: A fresh blue theme with playful emojis and animations.</li>
-                <li class="mb-2"><strong>Animations</strong>: Smooth fade-ins, bounces, and slide-down effects to make
-                    the site feel alive.</li>
-                <li class="mb-2"><strong>Emojis</strong>: Adds a fun and friendly vibe throughout the site. 🌈✨</li>
-            </ul>
-        </section>
-
-        <hr class="border-gray-300 my-6">
-
-        <section>
-            <h2 class="text-3xl font-bold text-blue-600 mb-4">❤️ Credits</h2>
-            <p class="text-lg text-gray-700">
-                This website was lovingly made by <strong>James</strong> with ❤️ and 🎵 for everyone. 🌈
-            </p>
         </section>
     </main>
 

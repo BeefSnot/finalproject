@@ -6,138 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SPRK Radio Website README">
     <title>SPRK Radio - README</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header class="bg-primary text-white text-center py-4">
-        <h1 class="display-4">🎵 SPRK Radio Website 🎵</h1>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="listen-live.html">Listen Live</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="readme.html">Read Me</a></li>
-                    </ul>
-                </div>
-            </div>
+<body class="bg-gradient-to-b from-blue-500 to-blue-300 text-gray-800">
+    <header class="bg-blue-600 text-white text-center py-6 shadow-lg">
+        <h1 class="text-4xl font-bold tracking-wide">🎵 SPRK Radio Website 🎵</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-4">
+                <li><a href="index.html" class="text-white font-semibold hover:text-yellow-300">Home</a></li>
+                <li><a href="schedule.html" class="text-white font-semibold hover:text-yellow-300">Schedule</a></li>
+                <li><a href="about.html" class="text-white font-semibold hover:text-yellow-300">About</a></li>
+                <li><a href="listen-live.html" class="text-white font-semibold hover:text-yellow-300">Listen Live</a></li>
+                <li><a href="contact.html" class="text-white font-semibold hover:text-yellow-300">Contact</a></li>
+                <li><a href="readme.html" class="text-yellow-300 font-semibold">Read Me</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main class="container my-5">
-        <section class="mb-4">
-            <h2 class="text-primary">Welcome</h2>
-            <p>Welcome to the <strong>SPRK Radio</strong> website project! This is a fun and colorful internet radio
+    <main class="container mx-auto my-10 px-4">
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Welcome</h2>
+            <p class="text-lg text-gray-700">
+                Welcome to the <strong>SPRK Radio</strong> website project! This is a fun and colorful internet radio
                 station website where users can listen to live music, check schedules, and learn more about the station.
-                It's designed to be fresh, bubbly, and super easy to use! 🌈✨</p>
+                It's designed to be fresh, bubbly, and super easy to use! 🌈✨
+            </p>
         </section>
 
-        <hr>
+        <hr class="border-gray-300 my-6">
 
-        <section class="mb-4">
-            <h2 class="text-primary">🌟 Features</h2>
-            <ul class="list-group">
-                <li class="list-group-item"><strong>Listen Live</strong>: Click the "Listen Live" button to start
-                    streaming your favorite tunes. 🎶</li>
-                <li class="list-group-item"><strong>Schedule</strong>: Check out the daily schedule of shows and live
-                    events.</li>
-                <li class="list-group-item"><strong>About Us</strong>: Learn more about SPRK Radio and what makes it
-                    awesome.</li>
-                <li class="list-group-item"><strong>Contact Form</strong>: Got questions or feedback? Fill out the form
-                    to get in touch with us. ❤️</li>
-                <li class="list-group-item"><strong>Smooth Scrolling</strong>: Navigate the site with smooth and
-                    seamless scrolling.</li>
-                <li class="list-group-item"><strong>Right-Click Disabled</strong>: Right-clicking is blocked to keep the
-                    site secure and focused. 🎵</li>
-                <li class="list-group-item"><strong>Custom Alerts</strong>: Fun pop-ups that say "SPRK Radio says..."
-                    instead of boring browser alerts.</li>
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">🌟 Features</h2>
+            <ul class="list-disc pl-6 text-lg text-gray-700">
+                <li class="mb-2"><strong>Listen Live</strong>: Click the "Listen Live" button to start streaming your
+                    favorite tunes. 🎶</li>
+                <li class="mb-2"><strong>Schedule</strong>: Check out the daily schedule of shows and live events.</li>
+                <li class="mb-2"><strong>About Us</strong>: Learn more about SPRK Radio and what makes it awesome.</li>
+                <li class="mb-2"><strong>Contact Form</strong>: Got questions or feedback? Fill out the form to get in
+                    touch with us. ❤️</li>
+                <li class="mb-2"><strong>Smooth Scrolling</strong>: Navigate the site with smooth and seamless
+                    scrolling.</li>
+                <li class="mb-2"><strong>Right-Click Disabled</strong>: Right-clicking is blocked to keep the site secure
+                    and focused. 🎵</li>
+                <li class="mb-2"><strong>Custom Alerts</strong>: Fun pop-ups that say "SPRK Radio says..." instead of
+                    boring browser alerts.</li>
             </ul>
         </section>
 
-        <hr>
+        <hr class="border-gray-300 my-6">
 
-        <section class="mb-4">
-            <h2 class="text-primary">🛠️ How It Works</h2>
-            <p>This website is designed to run exclusively on <strong>your hosting environment</strong>. It’s not meant
-                to be hosted elsewhere. Here’s how it works:</p>
-            <ol class="list-group list-group-numbered">
-                <li class="list-group-item"><strong>Homepage</strong>: The homepage welcomes users with a fun message
-                    and a link to start listening live.</li>
-                <li class="list-group-item"><strong>Navigation</strong>: Use the menu at the top to explore the site
-                    (Home, Schedule, About, Listen Live, Contact).</li>
-                <li class="list-group-item"><strong>Interactive Features</strong>: Includes smooth scrolling, custom
-                    alerts, and a contact form for user interaction.</li>
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">🛠️ How It Works</h2>
+            <p class="text-lg text-gray-700">
+                This website is designed to run exclusively on <strong>your hosting environment</strong>. It’s not meant
+                to be hosted elsewhere. Here’s how it works:
+            </p>
+            <ol class="list-decimal pl-6 text-lg text-gray-700 mt-4">
+                <li class="mb-2"><strong>Homepage</strong>: The homepage welcomes users with a fun message and a link to
+                    start listening live.</li>
+                <li class="mb-2"><strong>Navigation</strong>: Use the menu at the top to explore the site (Home,
+                    Schedule, About, Listen Live, Contact).</li>
+                <li class="mb-2"><strong>Interactive Features</strong>: Includes smooth scrolling, custom alerts, and a
+                    contact form for user interaction.</li>
             </ol>
         </section>
 
-        <hr>
+        <hr class="border-gray-300 my-6">
 
-        <section class="mb-4">
-            <h2 class="text-primary">🌐 Main SPRK Radio Website</h2>
-            <p>The SPRK Radio website is a vibrant and engaging platform for your internet radio station. It’s designed
-                to:</p>
-            <ul class="list-group">
-                <li class="list-group-item">Showcase your station’s personality with playful emojis and animations.</li>
-                <li class="list-group-item">Provide easy access to live streaming, schedules, and contact options.</li>
-                <li class="list-group-item">Deliver a seamless and fun user experience.</li>
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">🌐 Main SPRK Radio Website</h2>
+            <p class="text-lg text-gray-700">
+                The SPRK Radio website is a vibrant and engaging platform for your internet radio station. It’s designed
+                to:
+            </p>
+            <ul class="list-disc pl-6 text-lg text-gray-700 mt-4">
+                <li class="mb-2">Showcase your station’s personality with playful emojis and animations.</li>
+                <li class="mb-2">Provide easy access to live streaming, schedules, and contact options.</li>
+                <li class="mb-2">Deliver a seamless and fun user experience.</li>
             </ul>
         </section>
 
-        <hr>
+        <hr class="border-gray-300 my-6">
 
-        <section class="mb-4">
-            <h2 class="text-primary">📂 File Structure</h2>
-            <p>Here’s a quick overview of the project files:</p>
-            <ul class="list-group">
-                <li class="list-group-item"><strong>index.html</strong>: The homepage of the website.</li>
-                <li class="list-group-item"><strong>schedule.html</strong>: The schedule page for shows and events.</li>
-                <li class="list-group-item"><strong>about.html</strong>: The about page with information about SPRK
-                    Radio.</li>
-                <li class="list-group-item"><strong>listen-live.html</strong>: The page where users can stream live
-                    music.</li>
-                <li class="list-group-item"><strong>contact.html</strong>: The contact page with a form to reach out.
-                </li>
-                <li class="list-group-item"><strong>style.css</strong>: The main stylesheet for the website.</li>
-                <li class="list-group-item"><strong>script.js</strong>: The JavaScript file for smooth scrolling, custom
-                    alerts, and right-click blocking.</li>
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">📂 File Structure</h2>
+            <p class="text-lg text-gray-700">Here’s a quick overview of the project files:</p>
+            <ul class="list-disc pl-6 text-lg text-gray-700 mt-4">
+                <li class="mb-2"><strong>index.html</strong>: The homepage of the website.</li>
+                <li class="mb-2"><strong>schedule.html</strong>: The schedule page for shows and events.</li>
+                <li class="mb-2"><strong>about.html</strong>: The about page with information about SPRK Radio.</li>
+                <li class="mb-2"><strong>listen-live.html</strong>: The page where users can stream live music.</li>
+                <li class="mb-2"><strong>contact.html</strong>: The contact page with a form to reach out.</li>
+                <li class="mb-2"><strong>style.css</strong>: The main stylesheet for the website.</li>
+                <li class="mb-2"><strong>script.js</strong>: The JavaScript file for smooth scrolling, custom alerts,
+                    and right-click blocking.</li>
             </ul>
         </section>
 
-        <hr>
+        <hr class="border-gray-300 my-6">
 
-        <section class="mb-4">
-            <h2 class="text-primary">🎨 Design</h2>
-            <ul class="list-group">
-                <li class="list-group-item"><strong>Colors</strong>: A fresh blue theme with playful emojis and
-                    animations.</li>
-                <li class="list-group-item"><strong>Animations</strong>: Smooth fade-ins, bounces, and slide-down
-                    effects to make the site feel alive.</li>
-                <li class="list-group-item"><strong>Emojis</strong>: Adds a fun and friendly vibe throughout the site.
-                    🌈✨</li>
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">🎨 Design</h2>
+            <ul class="list-disc pl-6 text-lg text-gray-700">
+                <li class="mb-2"><strong>Colors</strong>: A fresh blue theme with playful emojis and animations.</li>
+                <li class="mb-2"><strong>Animations</strong>: Smooth fade-ins, bounces, and slide-down effects to make
+                    the site feel alive.</li>
+                <li class="mb-2"><strong>Emojis</strong>: Adds a fun and friendly vibe throughout the site. 🌈✨</li>
             </ul>
         </section>
 
-        <hr>
+        <hr class="border-gray-300 my-6">
 
         <section>
-            <h2 class="text-primary">❤️ Credits</h2>
-            <p>This website was lovingly made by <strong>James</strong> with ❤️ and 🎵 for everyone. 🌈</p>
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">❤️ Credits</h2>
+            <p class="text-lg text-gray-700">
+                This website was lovingly made by <strong>James</strong> with ❤️ and 🎵 for everyone. 🌈
+            </p>
         </section>
     </main>
 
-    <footer class="bg-primary text-white text-center py-3">
-        <p>&copy; 2025 | SPRK Radio | Based in Tulsa, Oklahoma | Made by James with ❤️ and 🎵 for everyone. 🌈 |</p>
+    <footer class="bg-blue-600 text-white text-center py-4 shadow-lg">
+        <p class="text-sm">&copy; 2025 | SPRK Radio | Based in Tulsa, Oklahoma | Made by James with ❤️ and 🎵 for
+            everyone. 🌈</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
 </body>
 
 </html>

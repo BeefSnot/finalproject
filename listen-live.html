@@ -9,6 +9,15 @@
     <title>SPRK Radio - Listen Live</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function openPlayer() {
+            const playerUrl = "https://radio.lumihost.net/public/sprk_radio/embed?theme=light";
+            const playerWindow = window.open(playerUrl, "SPRKRadioPlayer", "width=400,height=200");
+            if (!playerWindow) {
+                alert("Please allow popups for this website to open the player.");
+            }
+        }
+    </script>
 </head>
 
 <body class="bg-gradient-to-b from-blue-500 to-blue-300 text-gray-800 relative overflow-x-hidden">
@@ -49,16 +58,23 @@
         <section id="listen-live" class="bg-gradient-to-r from-white via-gray-100 to-white p-6 rounded-lg shadow-lg text-center">
             <h2 class="text-3xl font-bold text-blue-600 mb-4">🎧 Listen Live</h2>
             <p class="text-lg text-gray-700 mb-6">
-                Click below to start listening to SPRK Radio live! 🌟✨
+                Click the button below to open the SPRK Radio player in a new window! 🌟✨
             </p>
-            <div class="player space-y-6">
-                <iframe src="https://radio.lumihost.net/public/sprk_radio/embed?theme=light" frameborder="0"
-                    allowtransparency="true" class="w-full rounded-lg border-0" style="min-height: 150px;"></iframe>
-                <iframe src="https://radio.lumihost.net/public/sprk_radio/history?theme=light" frameborder="0"
-                    allowtransparency="true" class="w-full rounded-lg border-0" style="min-height: 300px;"></iframe>
-                <iframe src="https://radio.lumihost.net/public/sprk_radio/embed-requests?theme=dark" frameborder="0"
-                    allowtransparency="true" class="w-full rounded-lg border-0" style="min-height: 850px;"></iframe>
-            </div>
+            <button onclick="openPlayer()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                Open Player
+            </button>
+        </section>
+
+        <section id="previous-songs" class="bg-gradient-to-r from-white via-gray-100 to-white p-6 rounded-lg shadow-lg text-center mt-8">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">🎶 Previous Songs</h2>
+            <iframe src="https://radio.lumihost.net/public/sprk_radio/history?theme=light" frameborder="0"
+                allowtransparency="true" class="w-full rounded-lg border-0" style="min-height: 300px;"></iframe>
+        </section>
+
+        <section id="request-song" class="bg-gradient-to-r from-white via-gray-100 to-white p-6 rounded-lg shadow-lg text-center mt-8">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">🎤 Request a Song</h2>
+            <iframe src="https://radio.lumihost.net/public/sprk_radio/embed-requests?theme=dark" frameborder="0"
+                allowtransparency="true" class="w-full rounded-lg border-0" style="min-height: 850px;"></iframe>
         </section>
     </main>
 

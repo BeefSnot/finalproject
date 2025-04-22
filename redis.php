@@ -20,10 +20,12 @@ class RedisCache {
     }
 
     public function set($key, $value, $ttl = 3600) {
+        // Ensure we're storing clean data without any debug text
         return $this->redis->setex($key, $ttl, $value);
     }
 
     public function get($key) {
+        // Get the raw value without adding any debug text
         return $this->redis->get($key);
     }
 

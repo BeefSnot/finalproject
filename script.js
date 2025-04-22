@@ -24,6 +24,9 @@ $(document).ready(function () {
                 $('#form-response').text('Thank you! Your message has been sent. 🎉');
                 $('#form-response').css('color', 'green');
                 $('#contact-form').trigger('reset'); // Reset the form
+            } else if (response === "duplicate") {
+                $('#form-response').text('You have already submitted this message. 🛑');
+                $('#form-response').css('color', 'orange');
             } else {
                 $('#form-response').text('Oops! Something went wrong. Please try again. 😢');
                 $('#form-response').css('color', 'red');

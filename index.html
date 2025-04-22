@@ -9,31 +9,13 @@
     <title>SPRK Radio - Home</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body class="bg-gradient-to-b from-blue-500 to-blue-300 text-gray-800 relative overflow-x-hidden">
-    <!-- Floating yellow orbs -->
-    <div class="spark" style="top: 10%; left: 15%; animation-delay: 0s;"></div>
-    <div class="spark" style="top: 30%; left: 40%; animation-delay: 1s;"></div>
-    <div class="spark" style="top: 50%; left: 70%; animation-delay: 2s;"></div>
-    <div class="spark" style="top: 70%; left: 20%; animation-delay: 3s;"></div>
-    <div class="spark" style="top: 90%; left: 60%; animation-delay: 4s;"></div>
-
-    <!-- Floating bubbles -->
-    <div class="bubble" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
-    <div class="bubble" style="top: 40%; left: 30%; animation-delay: 1s;"></div>
-    <div class="bubble" style="top: 60%; left: 50%; animation-delay: 2s;"></div>
-    <div class="bubble" style="top: 80%; left: 70%; animation-delay: 3s;"></div>
-
-    <!-- Floating music notes -->
-    <div class="music-note" style="top: 30%; left: 15%; animation-delay: 0s;">🎵</div>
-    <div class="music-note" style="top: 50%; left: 40%; animation-delay: 1s;">🎶</div>
-    <div class="music-note" style="top: 70%; left: 60%; animation-delay: 2s;">🎵</div>
-    <div class="music-note" style="top: 90%; left: 80%; animation-delay: 3s;">🎶</div>
-
     <header class="bg-blue-600 text-white text-center py-6 shadow-lg bump">
         <h1 class="text-4xl font-bold tracking-wide">🎵 SPRK Radio 🎵</h1>
-        <nav class="mt-4">
+        <nav class="mt-4" aria-label="Main Navigation">
             <ul class="flex justify-center space-x-4">
                 <li><a href="index.html" class="text-yellow-300 font-semibold">Home</a></li>
                 <li><a href="schedule.html" class="text-white font-semibold hover:text-yellow-300">Schedule</a></li>
@@ -58,8 +40,7 @@
         <section id="daily-quote" class="bg-gradient-to-r from-purple-300 via-purple-400 to-purple-500 p-6 rounded-lg shadow-lg text-center mt-8">
             <h2 class="text-2xl font-bold text-purple-800 mb-4">🌟 Daily Inspiration</h2>
             <blockquote id="quote" class="text-lg italic text-gray-700">
-                <!-- The quote will be dynamically inserted here by script.js -->
-                "Loading a fun and uplifting quote... ✨"
+                Loading a fun and uplifting quote... ✨
             </blockquote>
         </section>
 
@@ -73,8 +54,24 @@
         <p class="text-sm">&copy; 2025 | SPRK Radio | Based in Tulsa, Oklahoma | Made by James with ❤️ and 🎵 for
             everyone. 🌈</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Fetch cached content from Redis
+            $.getJSON('dynamic-content.php', function (data) {
+                // Load animations
+                $('body').prepend(data.animations.spark);
+                $('body').prepend(data.animations.bubble);
+                $('body').prepend(data.animations.music_note);
+
+                // Load quote
+                $('#quote').html(`"${data.quote.content}" - ${data.quote.author}`);
+
+                // Load weather
+                $('#weather-info').text(data.weather);
+            });
+        });
+    </script>
 </body>
 
 </html>

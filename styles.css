@@ -339,7 +339,8 @@ custom-alert {
     nav ul {
         flex-direction: column;
         /* Stack navigation links vertically */
-        gap: 8px;
+        gap: 10px;
+        /* Add spacing between buttons */
     }
 
     nav ul li a {
@@ -347,6 +348,10 @@ custom-alert {
         /* Smaller padding for buttons */
         font-size: 0.9em;
         /* Smaller font size */
+        width: 100%;
+        /* Make buttons full-width */
+        text-align: center;
+        /* Center text inside buttons */
     }
 
     #home {

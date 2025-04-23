@@ -77,17 +77,17 @@
                 console.log('Dynamic content loaded:', data);
 
                 // Load animations
-                if (data.data && data.data.animations) {
-                    $('body').prepend(data.data.animations.spark);
-                    $('body').prepend(data.data.animations.bubble);
-                    $('body').prepend(data.data.animations.music_note);
+                if (data.animations) {
+                    $('body').prepend(data.animations.spark);
+                    $('body').prepend(data.animations.bubble);
+                    $('body').prepend(data.animations.music_note);
                 } else {
                     console.error('Animations data is missing.');
                 }
 
-                // Load quote - FIXED PATH
-                if (data.data && data.data.quote && data.data.quote.content && data.data.quote.author) {
-                    $('#quote').html(`"${data.data.quote.content}" - ${data.data.quote.author}`);
+                // Load quote
+                if (data.quote && data.quote.content && data.quote.author) {
+                    $('#quote').html(`"${data.quote.content}" - ${data.quote.author}`);
                 } else {
                     console.error('Quote data is missing or invalid.');
                     $('#quote').html('Unable to load quote. Please try again later.');

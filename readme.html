@@ -36,8 +36,8 @@
         <div class="container mx-auto flex justify-between items-center px-4">
             <h1 class="text-4xl font-bold tracking-wide">🎵 SPRK Radio 🎵</h1>
             <!-- Hamburger Menu Button -->
-            <button id="hamburger" class="block md:hidden text-white focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button id="hamburger" class="block md:hidden text-white focus:outline-none" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -46,8 +46,7 @@
         <!-- Navbar Links -->
         <nav id="mobile-menu" class="hidden md:flex justify-center space-x-4 mt-4 md:mt-0">
             <ul class="flex flex-col md:flex-row md:space-x-4 bg-blue-600 md:bg-transparent p-4 md:p-0">
-                <li><a href="index.html" class="text-white font-semibold hover:text-yellow-300">Home</a></li>
-                <li><a href="schedule.html" class="text-white font-semibold hover:text-yellow-300">Schedule</a></li>
+                <li><a href="landing.html" class="text-white font-semibold hover:text-yellow-300">Home</a></li>                <li><a href="schedule.html" class="text-white font-semibold hover:text-yellow-300">Schedule</a></li>
                 <li><a href="about.html" class="text-white font-semibold hover:text-yellow-300">About</a></li>
                 <li><a href="listen-live.html" class="text-white font-semibold hover:text-yellow-300">Listen Live</a></li>
                 <li><a href="contact.html" class="text-white font-semibold hover:text-yellow-300">Contact</a></li>
@@ -72,18 +71,37 @@
                 <li>📬 <strong>Contact Us:</strong> Got questions or feedback? Send us a message!</li>
                 <li>✨ <strong>Fun Animations:</strong> Enjoy playful bubbles, music notes, and sparkles throughout the site.</li>
                 <li>🎶 <strong>Request Songs:</strong> Let us know what you want to hear!</li>
+                <li>🌤️ <strong>Weather Updates:</strong> Check the current weather in Tulsa right on our homepage!</li>
+                <li>📝 <strong>Contact Form:</strong> Easily reach out to us using our friendly contact form!</li>
             </ul>
         </section>
 
         <section id="how-it-works" class="bg-gradient-to-r from-pink-200 via-pink-300 to-pink-400 p-6 rounded-lg shadow-lg text-center mt-8">
             <h2 class="text-2xl font-bold text-pink-800 mb-4">🛠️ How It Works</h2>
             <p class="text-lg text-gray-700">
-                SPRK Radio is designed to be fun, easy to use, and full of personality! Here’s how to make the most of it:
+                SPRK Radio is designed to be fun, easy to use, and full of personality! Here's how to make the most of it:
             </p>
             <ul class="list-disc text-left mt-4 ml-8 text-gray-700">
                 <li>🎉 <strong>Homepage:</strong> Start your journey with a warm welcome and quick access to live streaming.</li>
                 <li>📂 <strong>Navigation:</strong> Use the menu to explore the site (Home, Schedule, About, Listen Live, Contact).</li>
                 <li>💌 <strong>Interactive Features:</strong> Smooth scrolling, custom alerts, and a contact form for easy interaction.</li>
+                <li>🎧 <strong>Listen to Radio:</strong> Visit <a href="listen-live.html" class="text-pink-600 font-semibold hover:underline">Listen Live</a> to tune in! It opens a pop-up window, so be sure to enable pop-ups in your browser! 🎶</li>
+                <li>🌤️ <strong>Weather API:</strong> Our homepage displays real-time weather updates for Tulsa using the OpenWeatherMap API!</li>
+                <li>📱 <strong>Responsive Design:</strong> Enjoy SPRK Radio on any device, beautifully styled with Tailwind CSS!</li>
+            </ul>
+        </section>
+
+        <section id="tech-stack" class="bg-gradient-to-r from-green-200 via-green-300 to-green-400 p-6 rounded-lg shadow-lg text-center mt-8">
+            <h2 class="text-2xl font-bold text-green-800 mb-4">💻 Tech Stack</h2>
+            <p class="text-lg text-gray-700">
+                SPRK Radio is built with these fantastic technologies:
+            </p>
+            <ul class="list-disc text-left mt-4 ml-8 text-gray-700">
+                <li>🎨 <strong>Tailwind CSS:</strong> For beautiful, responsive designs that look amazing on all devices!</li>
+                <li>🌐 <strong>OpenWeatherMap API:</strong> Providing real-time weather updates on our homepage!</li>
+                <li>🔄 <strong>Redis Cache:</strong> Making our dynamic content load super fast!</li>
+                <li>✨ <strong>jQuery:</strong> For smooth interactions and dynamic elements!</li>
+                <li>📱 <strong>Responsive Design:</strong> Looks great on phones, tablets, and desktops!</li>
             </ul>
         </section>
 

@@ -327,6 +327,31 @@ custom-alert {
         font-size: 1em;
         /* Adjust paragraph size */
     }
+    
+    /* Make navigation text smaller on mobile */
+    #mobile-menu a {
+        font-size: 0.9rem !important;
+    }
+    
+    /* Make emojis in heading smaller on mobile */
+    header h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    /* Adjust emoji size specifically */
+    header h1 span, 
+    header h1 .emoji {
+        font-size: 1.5rem;
+    }
+    
+    /* Tighten up spacing in mobile nav */
+    #mobile-menu ul {
+        gap: 5px;
+    }
+    
+    #mobile-menu li {
+        margin-bottom: 5px;
+    }
 }
 
 /* Mobile Screens (480px and below) */
@@ -372,5 +397,14 @@ custom-alert {
     footer {
         font-size: 0.9em;
         /* Smaller footer text */
+    }
+    
+    header h1 {
+        font-size: 1.5rem !important;
+    }
+    
+    #mobile-menu a {
+        font-size: 0.8rem !important;
+        padding: 6px 12px !important;
     }
 }
